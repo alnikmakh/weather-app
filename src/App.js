@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [weather, setWeather] = useState([]);
   const fetchWeather = async () => {
-    return await (await fetch("http://localhost:8000/weather")).json();
+    return await (await fetch("http://localhost:8000/weather/")).json();
   }
 
   useEffect(() => {
